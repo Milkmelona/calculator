@@ -1,0 +1,58 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+.container {
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+button {
+    font-size: 15px;
+    border: solid;
+    border-radius: 8px;
+    font: inherit;
+}
+.calculatorhead, .calculatorbody {
+    border: solid;
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+.calculatorhead {
+    width: 800px;
+    max-height: 125px;
+    padding: 15px;
+    overflow: hidden;
+}
+.calculatorbody {
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 15px;
+    gap: 10px;
+    max-width: 800px;
+}
+.calculator {
+    border: solid;
+    border-radius: 10px;
+}
+.addition {
+    grid-row-start: span 2;
+}
+.erase, .clear {
+    grid-column-start: span 2;
+}
+.showequation {
+    text-align: left;
+    max-height: 75px;
+    font-size: 25px;
+}
+.showsolution {
+    text-align: right;
+    max-height: 75px;
+    font-size: 40px;
+}
