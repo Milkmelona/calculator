@@ -15,6 +15,7 @@ button {
     border: solid;
     border-radius: 8px;
     font: inherit;
+    border-width: 2px;
 }
 .calculatorhead, .calculatorbody {
     border: solid;
@@ -23,9 +24,13 @@ button {
 }
 .calculatorhead {
     width: 800px;
-    max-height: 125px;
+    height: 100px;
     padding: 15px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 15px;
 }
 .calculatorbody {
     height: 375px;
@@ -40,19 +45,18 @@ button {
     border: solid;
     border-radius: 10px;
 }
-.addition {
+#addition {
     grid-row-start: span 2;
 }
-.erase, .clear {
+#erase, #clear {
     grid-column-start: span 2;
 }
-.showequation {
-    text-align: left;
-    max-height: 75px;
-    font-size: 25px;
+#showequation {
+    font-size: 33px;
 }
-.showsolution {
-    text-align: right;
-    max-height: 75px;
-    font-size: 40px;
+#showsolution {
+    font-size: 43px;
+}
+button:hover {
+    box-shadow: 3px 2px 8px;
 }
