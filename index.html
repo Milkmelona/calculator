@@ -5,44 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+            <h1>I am a calculator!</h1>
+        <div class="calculator">
         <div class="calculatorhead">
-            <div class="calculatorscreen"></div>
+            <div id="showequation">
+            </div>
+            <div id="showsolution">
+            </div>
         </div>
         <div class="calculatorbody">
-            <div class="buttons">
-                <div class="column1">
-                    <button>7</button>
-                    <button>4</button>
-                    <button>1</button>
-                    <button>0</button>
-                </div>
-                <div class="column2">
-                    <button>8</button>
-                    <button>5</button>
-                    <button>2</button>
-                    <button>.</button>
-                </div>
-                <div class="column3">
-                    <button>9</button>
-                    <button>6</button>
-                    <button>3</button>
-                    <button>00</button>
-                </div>
-                <div class="column4">
-                    <button>%</button>
-                    <button>x</button>
-                    <button>+</button>
-                </div>
-                <div class="column5">
-                    <button>√</button>
-                    <button>÷</button>
-                    <button>-</button>
-                    <button>=</button>
-                </div>
-            </div>
+                    <button class="btn data-number">7</button>
+                    <button class="btn data-number">8</button>
+                    <button class="btn data-number">9</button>
+                    <button class="btn data-operator">mod</button>
+                    <button class="btn data-operator">√</button>
+                    <button class="btn data-number">4</button>
+                    <button class="btn data-number">5</button>
+                    <button class="btn data-number">6</button>
+                    <button class="btn data-operator">x</button>
+                    <button class="btn data-operator">÷</button>
+                    <button class="btn data-number">1</button>
+                    <button class="btn data-number">2</button>
+                    <button class="btn data-number">3</button>
+                    <button class="btn data-operator" id="addition">+</button>
+                    <button class="btn data-operator">-</button>
+                    <button class="btn data-number">0</button>
+                    <button class="btn data-number">00</button>
+                    <button class="btn" id="decimalpoint">.</button>
+                    <button class="btn data-operator">^</button>
+                    <button class="btn" id="erase">ERASE</button>
+                    <button class="btn" id="clear">CLEAR</button>
+                    <button class="btn" id="answer">ANS</button>
+        </div>
         </div>
     </div>
 </body>
